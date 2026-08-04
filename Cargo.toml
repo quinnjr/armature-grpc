@@ -1,6 +1,6 @@
 [package]
 name = "armature-grpc"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2024"
 rust-version = "1.94.1"
 authors = ["Joseph Quinn <quinn.josephr@proton.me>"]
@@ -13,7 +13,7 @@ categories = ["network-programming", "asynchronous"]
 
 [dependencies]
 # Logging
-armature-log = { version = "0" }
+armature-log = { version = "0.2" }
 
 # gRPC
 tonic = { version = "0.14", features = ["gzip", "zstd", "tls-ring"] }
