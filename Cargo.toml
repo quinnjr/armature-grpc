@@ -45,10 +45,10 @@ rustls = { version = "0.23", default-features = false, features = ["ring"] }
 # generated per-service wrapper types this crate's generic `serve<S>`/client
 # helpers never see.
 flate2 = "1.1"
-zstd = "0.13"
+zstd = "0.14"
 
 # Async runtime
-tokio = { version = "1.52", features = ["rt-multi-thread", "net", "sync", "time"] }
+tokio = { version = "1.53", features = ["rt-multi-thread", "net", "sync", "time"] }
 tokio-stream = { version = "0.1", features = ["net"] }
 
 # Tower (middleware)
@@ -56,11 +56,11 @@ tower = { version = "0.5", features = ["timeout", "limit", "load-shed"] }
 tower-service = "0.3"
 
 # HTTP
-http = "1.4"
-http-body = "1.0"
+http = "1.5"
+http-body = "1.1"
 http-body-util = "0.1"
 bytes = "1.12"
-hyper = { version = "1.10", features = ["server", "http2"] }
+hyper = { version = "1.11", features = ["server", "http2"] }
 hyper-util = { version = "0.1", features = ["tokio"] }
 
 # Serialization
@@ -94,7 +94,7 @@ reflection = ["tonic-reflection"]
 
 [dev-dependencies]
 cargo-husky = { version = "1.5", default-features = false, features = ["user-hooks"] }
-tokio = { version = "1.52", features = ["rt-multi-thread", "macros", "sync", "time", "net", "io-util", "fs", "test-util"] }
+tokio = { version = "1.53", features = ["rt-multi-thread", "macros", "sync", "time", "net", "io-util", "fs", "test-util"] }
 tokio-test = "0.4"
 tonic-health = { version = "0.14" }
 tonic-reflection = { version = "0.14" }
