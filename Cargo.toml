@@ -37,7 +37,7 @@ prost-types = "0.14"
 # larger, riskier change than the footprint this saves. This is an accepted
 # tradeoff: every consumer pays for rustls + tonic's `tls-ring` even if they
 # never configure TLS.
-rustls = { version = "0.23", default-features = false, features = ["ring"] }
+rustls = { version = "0.23.45", default-features = false, features = ["ring"] }
 
 # Compression: used by `middleware::CompressionMiddleware` to actually
 # (de)compress gRPC message frames on the wire (see `middleware.rs`), since
